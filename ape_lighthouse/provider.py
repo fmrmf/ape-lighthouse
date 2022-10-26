@@ -2,11 +2,9 @@ import requests
 from ape.api.providers import UpstreamProvider
 from ape.exceptions import ProviderError
 from ape.logging import logger
+from ape_beacon.providers import BeaconProvider
 from web3.beacon import Beacon
 from yarl import URL
-
-from ape_beacon.providers import BeaconProvider
-
 
 DEFAULT_SETTINGS = {"uri": "http://localhost:5052"}
 
