@@ -1,6 +1,6 @@
 from ape import plugins
 
-from .providers import LighthouseProvider
+from .provider import LighthouseProvider
 
 NETWORKS = {
     "beacon": [
