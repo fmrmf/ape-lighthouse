@@ -14,6 +14,7 @@ extras_require = {
         "mypy>=0.971",  # Static type analyzer
         "flake8>=4.0.1",  # Style linter
         "isort>=5.10.1",  # Import sorting linter
+        "types-requests",  # NOTE: Needed due to mypy typeshed
     ],
     "release": [  # `release` GitHub Action job uses this
         "setuptools",  # Installation tool
