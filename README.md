@@ -1,6 +1,6 @@
 # Quick Start
 
-TODO: Description
+Use the Lighthouse provider plugin to interact with the [Ethereum consensus layer](https://github.com/ethereum/beacon-APIs) via a [Lighthouse](https://github.com/sigp/lighthouse) consensus client.
 
 ## Dependencies
 
@@ -13,7 +13,7 @@ TODO: Description
 You can install the latest release via [`pip`](https://pypi.org/project/pip/):
 
 ```bash
-pip install <PYPI_NAME>
+pip install ape-lighthouse
 ```
 
 ### via `setuptools`
@@ -21,14 +21,16 @@ pip install <PYPI_NAME>
 You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
 
 ```bash
-git clone https://github.com/ApeWorX/<PYPI_NAME>.git
-cd <PYPI_NAME>
+git clone https://github.com/ApeWorX/ape-lighthouse.git
+cd ape-lighthouse
 python3 setup.py install
 ```
 
 ## Quick Usage
 
-TODO: Describe library overview in code
+```
+ape console --network beacon:mainnet:lighthouse
+```
 
 ## Development
 

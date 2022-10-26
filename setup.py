@@ -42,25 +42,29 @@ with open("./README.md") as readme:
 
 
 setup(
-    name="<PYPI_NAME>",
+    name="ape-lighthouse",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
-    description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
+    description="""ape-lighthouse: Lighthouse Provider plugin for Ethereum Consensus Layer""",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="ApeWorX Ltd.",
     author_email="admin@apeworx.io",
-    url="https://github.com/ApeWorX/<REPO_NAME>",
+    url="https://github.com/ApeWorX/ape-lighthouse",
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        "eth-ape>=0.5.2,<0.6.0",
+        "hexbytes",  # Use same version as eth-ape
+        "web3",  # Use same version as eth-ape
+    ],  # "ape-beacon",  # TODO: update for pypi
     python_requires=">=3.8,<4",
     extras_require=extras_require,
-    py_modules=["<MODULE_NAME>"],
+    py_modules=["ape_lighthouse"],
     license="Apache-2.0",
     zip_safe=False,
     keywords="ethereum",
     packages=find_packages(exclude=["tests", "tests.*"]),
-    package_data={"<MODULE_NAME>": ["py.typed"]},
+    package_data={"ape_lighthouse": ["py.typed"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
