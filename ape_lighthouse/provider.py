@@ -12,7 +12,7 @@ DEFAULT_SETTINGS = {"uri": "http://localhost:5052"}
 
 
 # SEE: https://github.com/ApeWorX/ape/blob/main/src/ape_geth/provider.py#L147
-class Lighthouse(BeaconProvider, UpstreamProvider):
+class LighthouseProvider(BeaconProvider, UpstreamProvider):
     name: str = "lighthouse"
 
     @property
